@@ -37,3 +37,21 @@ select
   ) then 'Inner' else 'Leaf' end as type 
 from 
   Tree;
+
+-- 610. Triangle Judgement
+select 
+  x, 
+  y, 
+  z, 
+  if(
+    (
+      x + y > z 
+      and y + z > x 
+      and z + x > y
+    ), 
+    'Yes', 
+    'No'
+  ) as triangle 
+from 
+  Triangle;
+
