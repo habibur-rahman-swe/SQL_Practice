@@ -93,3 +93,19 @@ update
   Salary 
 set 
   sex = case when sex = 'm' then 'f' else 'm' end;
+
+-- customers-who-bought-all-products
+select 
+  customer_id 
+from 
+  Customer 
+group by 
+  customer_id 
+having 
+  count(distinct product_key) = (
+    select 
+      count(product_key) 
+    from 
+      Product
+  );
+
