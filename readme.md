@@ -1,9 +1,6 @@
-
 # SQL Practice
 
 SQL Problems that I solved regularly to improve my SQL skills.
-
-
 
 
 ## Problems
