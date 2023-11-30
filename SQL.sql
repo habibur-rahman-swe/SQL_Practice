@@ -129,3 +129,5 @@ where
       min(sale_date) >= '2019-01-01' 
       and max(sale_date) <= '2019-03-31'
   );
+
+
