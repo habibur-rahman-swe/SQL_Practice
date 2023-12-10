@@ -94,13 +94,28 @@ having
   sum(o.unit) >= 100;
  ```
 
+#
+ - [Revising the Select Query I](https://www.hackerrank.com/challenges/revising-the-select-query/problem)
+
+ ```
+ select 
+  * 
+from 
+  CITY 
+where 
+  COUNTRYCODE = 'USA' 
+  and POPULATION > 100000;
+ ```
 
 <!-- template -->
- <!-- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ <!-- 
+ #
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
 
  ```
  
  ```
+ #
   -->
  
 
