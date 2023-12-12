@@ -107,15 +107,25 @@ where
   and POPULATION > 100000;
  ```
 
-<!-- template -->
- <!-- 
  #
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Revising the Select Query II](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem)
 
- ```
- 
- ```
- #
-  -->
+```
+select NAME
+from CITY
+where COUNTRYCODE = 'USA' and POPULATION > 120000;
+```
+#
+
+<!-- template -->
+<!-- 
+#
+- [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+
+```
+
+```
+#
+-->
  
 
