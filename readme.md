@@ -151,6 +151,17 @@ SELECT
 #
 
 
+
+- [Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/problem)
+
+`select  the  salary of the employees having the salary greater than 2000 and working less than 10 months.`
+```
+SELECT NAME 
+FROM EMPLOYEE
+WHERE SALARY > 2000 AND MONTHS < 10; 
+```
+#
+
 <!-- template -->
 <!-- 
 
