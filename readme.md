@@ -116,10 +116,18 @@ from CITY
 where COUNTRYCODE = 'USA' and POPULATION > 120000;
 ```
 #
+- [Weather Observation Station 3](https://www.hackerrank.com/challenges/weather-observation-station-3/)
+  - select distinct city name from stations where id's are even
+```
+SELECT distinct(CITY) 
+FROM STATION
+WHERE ID % 2 = 0;
+```
+#
 
 <!-- template -->
 <!-- 
-#
+
 - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
 
 ```
