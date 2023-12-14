@@ -125,6 +125,32 @@ WHERE ID % 2 = 0;
 ```
 #
 
+- [Weather Observation Station 4](https://www.hackerrank.com/challenges/weather-observation-station-4/problem)
+
+`
+Finding differences between number of distinct CITY and the number of CITY in STATION table.
+`
+
+```
+SELECT 
+  (
+    SELECT 
+      Count(city) 
+    FROM 
+      station
+  ) - (
+    SELECT 
+      Count(
+        DISTINCT(city)
+      ) 
+    FROM 
+      station
+  ) AS COUNT;
+
+```
+#
+
+
 <!-- template -->
 <!-- 
 
