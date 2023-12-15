@@ -162,6 +162,38 @@ WHERE SALARY > 2000 AND MONTHS < 10;
 ```
 #
 
+
+- [Weather Observation Station 5](https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=false)
+
+`select city with the city name with the maximum length and minimun length of its name(if there are multiple then select a laxiographicaly the first one only)`
+
+####  Approach:
+1.  Select the the first one with the minimum length from in `assending` order
+
+2.  Select the first one with the maximum length from `assending` order
+
+3.  Union them using `union all` 
+
+```
+(SELECT city,
+        Length(city)
+ FROM   station
+ HAVING Length(city) = (SELECT Min(Length(city))
+                        FROM   station)
+ ORDER  BY city
+ LIMIT  1)
+UNION ALL
+(SELECT city,
+        Length(city)
+ FROM   station
+ HAVING Length(city) = (SELECT Max(Length(city))
+                        FROM   station)
+ ORDER  BY city
+ LIMIT  1); 
+```
+#
+
+
 <!-- template -->
 <!-- 
 
