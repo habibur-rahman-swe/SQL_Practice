@@ -234,6 +234,16 @@ from station
 where city regexp '^[^aeiou]';
 ```
 #
+- [Weather Observation Station 10](https://www.hackerrank.com/challenges/weather-observation-station-10/problem?isFullScreen=true)
+
+`select the distinct city name from station where the city name does not end with vowel`
+
+```
+select distinct(city)
+from station
+where city regexp '[^aeiou]$';
+```
+#
 
 <!-- template -->
 <!-- 
