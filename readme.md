@@ -204,6 +204,14 @@ WHERE city REGEXP '^[aeiouAEIOU]';
 ```
 #
 
+- [Weather Observation Station 7](https://www.hackerrank.com/challenges/weather-observation-station-7/problem?isFullScreen=true)
+
+`select distinct city from station table where city end with a vowel(a, e, i, o, u)`
+
+```
+select distinct(city) from station where city regexp '[aeiou]$';
+```
+#
 
 <!-- template -->
 <!-- 
