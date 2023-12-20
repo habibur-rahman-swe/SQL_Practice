@@ -256,6 +256,8 @@ where city regexp '^[^aeiou].*$|[^aeiou]$';
 
 - [Weather Observation Station 12](https://www.hackerrank.com/challenges/weather-observation-station-12/problem?isFullScreen=true)
 
+`Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. result cannot contain duplicates.`
+
 ```
 SELECT DISTINCT( city )
 FROM   station
