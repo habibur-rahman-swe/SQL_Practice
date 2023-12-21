@@ -254,6 +254,7 @@ where city regexp '^[^aeiou].*$|[^aeiou]$';
 ```
 #
 
+
 - [Employee Names](https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=false)
 
 ```
@@ -286,6 +287,35 @@ ORDER  BY f1.x;
 ```
 
 #
+
+- [Weather Observation Station 12](https://www.hackerrank.com/challenges/weather-observation-station-12/problem?isFullScreen=true)
+
+`Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. result cannot contain duplicates.`
+
+```
+SELECT DISTINCT( city )
+FROM   station
+WHERE  city REGEXP '^[^aeiou].*[^aeiou]$'; 
+```
+- [Higher Than 75 Marks](https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=false)
+
+`Query the Name of any student in STUDENTS who scored higher than  Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.`
+
+```
+SELECT NAME
+FROM   students
+WHERE  marks > 75
+ORDER  BY Substring(NAME, -3),
+          id ASC; 
+```
+
+```
+SELECT NAME
+FROM   students
+WHERE  marks > 75
+ORDER  BY RIGHT(NAME, 3),
+          id ASC; 
+```
 
 <!-- template -->
 <!-- 
