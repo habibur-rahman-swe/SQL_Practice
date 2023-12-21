@@ -263,6 +263,30 @@ ORDER  BY NAME;
 ```
 #
 
+- [Symmetric Pairs](https://www.hackerrank.com/challenges/symmetric-pairs/problem?isFullScreen=false)
+
+  - given columns of the table `functions` are `x`, `y`
+  - `Two pairs (X1, Y1) and (X2, Y2) are said to be symmetric pairs if X1 = Y2 and X2 = Y1.`
+
+  - `Write a query to output all such symmetric pairs in ascending order by the value of X. List the rows such that X1 ≤ Y1.`
+
+```
+SELECT f1.x,
+       f1.y
+FROM   functions AS f1
+       INNER JOIN functions AS f2
+               ON f1.x = f2.y
+                  AND f1.y = f2.x
+GROUP  BY f1.x,
+          f1.y
+HAVING f1.x < f1.y
+        OR f1.x = f1.y
+           AND Count(*) > 1
+ORDER  BY f1.x; 
+```
+
+#
+
 <!-- template -->
 <!-- 
 
