@@ -253,6 +253,16 @@ from station
 where city regexp '^[^aeiou].*$|[^aeiou]$';
 ```
 #
+
+- [Employee Names](https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=false)
+
+```
+SELECT NAME
+FROM   employee
+ORDER  BY NAME; 
+```
+#
+
 <!-- template -->
 <!-- 
 
