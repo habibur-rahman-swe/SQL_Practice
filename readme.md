@@ -287,6 +287,40 @@ ORDER  BY f1.x;
 
 #
 
+- [Type of Triangle](https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=false)
+
+Write a query identifying the type of each record in the TRIANGLES table using its three side lengths. Output one of the following statements for each record in the table:
+
+-  Equilateral: It's a triangle with  sides of equal length.
+-  Isosceles: It's a triangle with  sides of equal length.
+-  Scalene: It's a triangle with  sides of differing lengths.
+-  Not A Triangle: The given values of A, B, and C don't form a triangle.
+
+```
+SELECT CASE
+         WHEN a = b
+              AND b = c THEN 'Equilateral'
+         WHEN a = b
+              AND a + b > c
+               OR b = c
+                  AND b + c > a
+               OR a + c > b
+                  AND a = c THEN 'Isosceles'
+         WHEN a > b
+              AND a > c
+              AND b + c > a
+               OR b > a
+                  AND b > c
+                  AND a + c > b
+               OR c > a
+                  AND c > b
+                  AND a + b > c THEN 'Scalene'
+         ELSE "not a triangle"
+       END
+FROM   triangles; 
+```
+#
+
 <!-- template -->
 <!-- 
 
