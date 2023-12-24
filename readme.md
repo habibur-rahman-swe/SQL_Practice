@@ -321,6 +321,22 @@ FROM   triangles;
 ```
 #
 
+- [The PADS](https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true)
+
+```
+SELECT Concat(NAME, '(', LEFT(occupation, 1), ')')
+FROM   occupations
+ORDER  BY NAME;
+
+SELECT Concat('There are a total of ', Count(occupation), ' ', Lower(occupation)
+       , 's.')
+FROM   occupations
+GROUP  BY occupation
+ORDER  BY Count(occupation),
+          occupation; 
+```
+#
+
 <!-- template -->
 <!-- 
 
